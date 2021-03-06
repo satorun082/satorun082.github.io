@@ -1,0 +1,7 @@
+
+@media (min-width: 600px) {
+    header, main, footer {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+}
