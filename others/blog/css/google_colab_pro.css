@@ -1,0 +1,23 @@
+
+body {
+    background-color: white;
+}
+
+header, main, footer {
+    background-color: rgba(139, 139, 139, 0.096);
+}
+
+@media (min-width: 600px) {
+    header, main, footer {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+}
+
+h1  {
+    color: purple;
+}
+
+h2 {
+    color: rgba(193, 88, 235, 0.829);
+}
