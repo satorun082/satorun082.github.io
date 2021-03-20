@@ -11,7 +11,9 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icon -->
 
         <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
         <title>Atcoder Beginner Contest 196</title>
     </head>
 
@@ -24,44 +26,83 @@
         <main>
             
             <h2>所感</h2>
-            <p>
+            <article>
+                <p>
+                    今回は,A-Cの完答で終了しました.
+                    A-Dの完答が目標であるので,目標達成に一歩ずつ前進している感覚を得られるのは素晴らしいと思う.
+                    初回がAのみ,二回目がA,Cのみ,今回がA-Cであるので,次回で目標達成しそうです.(調子ノッチャッテ)
+                    しかしながら,今回は比較的平易であったと思われるので,正直に述べるとまだまだ目標までは遠そうですね.
+                </p>
+                
+            </article>
 
-            </p>
+            <h2>A問題: Difference Max</h2>
+            <article>
+                <p>
+                    結論は, \( b - c \) です.<br/>
+                    \(a \leqq x  \leqq b\) , \(c \leqq y \leqq d \) なので, \( a-d \leqq x-y \leqq c-d \) である.
+                </p>
+            </article>
 
-            <h2>A問題: </h2>
-            <p>
+            <h2>B問題: Round Down</h2>
+            <article>
+                <p>
+                    普通に小数点切り捨てて表示しようとすると, \( 10^{100} \) という制限に引っかかってしまうのである.(因みに私は引っかかってしまった)
+                    他に方法がないかを考える.
+                    そもそも, \( 10^{100} \) を数字で表すことが出来ないので(型の制限上),数字じゃなくて文字列で捉えようと考えることが出来る.
+                    後は, 最初の文字からドット(".")の前まで表示させることが出来ればACを得ることが出来るだろう.
+                </p>
+            </article>
 
-            </p>
 
-            <h2>B問題: </h2>
-            <p>
+            <h2>C問題: Doubled</h2>
+            <article>
+                <p>
+                    前の問題が文字列だったので,数値から文字列に変換したのち,前半と後半が等しいか判定すれば良いのではないかと考えたがTLEである.
+                    次に,別に文字列に変換する必要がないことに気付くので,計算式のみで判定する方法を思いつく->TLEである.
+                    少し実験したみたら, \( 10^{12} \) という値がそこまで大きくないと思っていた私は驚愕した.
+                    for文を用いて \( 10^{12} \) 回まわすとTLEになることを今回のABCで初めて知ったのである.
+                    今後は気を付けようと思う.
+                </p>
+                <p>
+                    結論は,入力桁数までに条件を満たす個数+入力桁数における最小の値から入力整数までに条件を満たす数である.
+                    ここで,数学的に求められることに気付くべきである.
+                    具体的に考えてみる.
+                    入力桁数が3桁の場合,
+                    11, 22, 33, 44, 55, 66, 77, 88, 99の9つである.
+                    では,入力桁数が5桁の場合はどうだろう,
+                    100100, ... 999999であると分かる.
+                    つまり,最初の場合は, \( 10^{1} - 10^{0} \) , \( 10^{3} - 10^{2} \) であることに気付くことが出来るかが勝負の分かれ目であろう.
+                    次に上記で求めた値に足す値を具体的に考えるのは,33である.
+                    32なら2, 33なら3, 34でも3を出力する必要がある.
+                    前半部分が後半部分より大きければ(前半部分の値-1)を,後半部分の値の方が大きければ(前半部分の値)を足すことが出来ればACを得ることが出来るであろう.
+                </p>
+            </article>
 
-            </p>
 
-            <h2>C問題: </h2>
-            <p>
+            <h2>D問題: Hanjo</h2>
+            <article>
+                <p>
 
-            </p>
-            <pre>
-                <code class="prettyprint">
-                </code>
-            </pre>
+                </p>
+            </article>
 
-            <h2>D問題: </h2>
-            <p>
-
-            </p>
 
             <h2>終わりに</h2>
-            <p>
-            
-            </p>
+            <article>
+                <p>
+
+                </p>
+            </article>
+
             
             <h2>参考文献 - 参考にしてるサイトやYouTube</h2>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
+            <article>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </article>
 
         </main>
 
