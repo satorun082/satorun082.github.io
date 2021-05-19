@@ -1,4 +1,3 @@
-
 body {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -49,13 +48,13 @@ button {
   display: inline-block;
 }
 
-.btn-11 {
+.btn {
   background: #f2f2f2;
   border: 2px solid #000;
   transition: all 0.3s ease;
 }
 
-.btn-11:before, .btn-11:after {
+.btn:before, .btn:after {
   position: absolute;
   content: " ";
   z-index: -1;
@@ -66,23 +65,23 @@ button {
   transition: all 0.3s ease;
 }
 
-.btn-11:before {
+.btn:before {
   left: -10%;
 }
 
-.btn-11:after {
+.btn:after {
   right: -10%;
 }
 
-.btn-11:hover {
+.btn:hover {
   background: #000;
   color: #fff;
 }
 
-.btn-11:hover:before {
+.btn:hover:before {
   left: 0%;
 }
 
-.btn-11:hover:after {
+.btn:hover:after {
   right: 0%;
 }

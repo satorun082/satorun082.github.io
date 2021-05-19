@@ -1,9 +1,39 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
 
-@media (min-width: 600px) {
-    header, main, footer {
+@media (min-width: 600px){
+    header, main, nav {
         margin-right: 20%;
         margin-left: 20%;
     }
+}
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.item {
+    border-radius: 10px;
+    background: rgba(139, 139, 139, 0.26);
+    padding: 15px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    text-align: left;
+}
+
+button {
+    margin: 20px;
 }
 
 .custom-btn {
@@ -18,13 +48,13 @@
     display: inline-block;
 }
 
-.btn-11 {
+.btn {
     background: #f2f2f2;
     border: 2px solid #000;
     transition: all 0.3s ease;
 }
   
-.btn-11:before, .btn-11:after {
+.btn:before, .btn:after {
     position: absolute;
     content: " ";
     z-index: -1;
@@ -35,23 +65,23 @@
     transition: all 0.3s ease;
 }
 
-.btn-11:before {
+.btn:before {
     left: -10%;
 }
 
-.btn-11:after {
+.btn:after {
     right: -10%;
 }
 
-.btn-11:hover {
+.btn:hover {
     background: #000;
     color: #fff;
 }
 
-.btn-11:hover:before {
+.btn:hover:before {
     left: 0%;
 }
 
-.btn-11:hover:after {
+.btn:hover:after {
     right: 0%;
 }
