@@ -4,10 +4,38 @@ body {
 }
 
 @media (min-width: 600px){
-  header, main {
+  header, main, footer {
+      margin-top: 3%;
       margin-right: 20%;
+      margin-bottom: 3%;
       margin-left: 20%;
-  }
+  
+    }
+}
+
+h1 {
+  color: #8858aa;
+}
+
+h2 {
+  color: #68cfc3;
+}
+
+h3 {
+  color: #eda184;
+}
+
+h4 {
+  color: #d5e0f1;
+}
+
+h5 {
+  color: #8858aa;
+}
+
+a {
+  color: #8858aa;
+  background-color: #ffea2a;
 }
 
 .grid {
